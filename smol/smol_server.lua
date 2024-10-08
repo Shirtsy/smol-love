@@ -1,4 +1,3 @@
-local class = require 'middleclass'
 local SmolObject = require 'smol_object'
 
 SmolServer = SmolObject:subclass('SmolServer')
