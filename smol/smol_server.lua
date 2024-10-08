@@ -16,7 +16,7 @@ function SmolServer:request_unsub(object)
 end
 
 function SmolServer:run(...)
-    for object, callback in self.subscribers do
+    for object, callback in pairs(self.subscribers) do
         callback(...)
     end
 end

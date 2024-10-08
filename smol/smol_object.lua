@@ -16,7 +16,7 @@ function SmolObject:unsubscribe(server)
 end
 
 function SmolObject:unsubscribe_all()
-    for server, _ in self.subscriptions do
+    for server, _ in pairs(self.subscriptions) do
         self:unsubscribe(server)
     end
 end
