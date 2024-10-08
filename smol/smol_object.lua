@@ -15,4 +15,10 @@ function SmolObject:unsubscribe(server)
     self.subscriptions[server] = nil
 end
 
+function SmolObject:unsubscribe_all()
+    for server, _ in self.subscriptions do
+        self:unsubscribe(server)
+    end
+end
+
 return SmolObject
