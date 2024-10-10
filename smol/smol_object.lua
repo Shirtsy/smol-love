@@ -1,6 +1,6 @@
 local class = require 'middleclass'
 
-SmolObject = class('SmolObject')
+local SmolObject = class('SmolObject')
 function SmolObject:initialize()
   self.subscriptions = {}
 end

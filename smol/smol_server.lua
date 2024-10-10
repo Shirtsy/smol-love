@@ -1,6 +1,6 @@
 local SmolObject = require 'smol_object'
 
-SmolServer = SmolObject:subclass('SmolServer')
+local SmolServer = SmolObject:subclass('SmolServer')
 function SmolServer:initialize()
     SmolObject.initialize(self)
     self.subscribers = {}
